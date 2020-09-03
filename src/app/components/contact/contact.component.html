@@ -1,0 +1,36 @@
+<div class="container">
+    <div id="title">
+        <h1>{{title}}</h1>
+        <h2>{{subtitle}}</h2>
+    </div>
+    <h2 style="text-align: center">PUEDES LOCALIZARNOS POR LOS SIGUIENTES MEDIOS:</h2>
+    <ul class="project">
+        <li class="project">
+            <img src="../../../assets/img/unnamed.png" width="50" height="50"/>
+            <p>OFICINAS :969532762</p>
+
+        </li>
+
+        <li class="project">
+            <img src="../../../assets/img/26-260052_gmail-logo-png-gmail-vector-logo-png-transparent.png" width="50" height="50"/>
+            <p>julian.gadea.asesor@gmail.com</p>
+        </li>
+
+        <li class="project">
+            <img src="../../../assets/img/b2e48580147ca0ed3f970f30bf8bb009-mapa-de-ubicaci--n-marcador-by-vexels.png" width="50" height="50"/>
+            <p>Av. Ejército 15A,7A</p>
+        </li>
+    </ul><BR><br><br>
+    <h2 style="text-align: center">PARA CUALQUIER DUDA ENVÍA TU PREGUNTA O LLAMA DIRECTAMENTE A NUESTROS AGENTES!</h2><br>
+    <br><h2 style="text-align: center;color: indianred">RELLENA TODAS LAS CASILLAS PARA DARTE LA MEJOR SOLUCIÓN</h2><br>
+    <form (ngSubmit)="contactForm(form.value)" (submit)="form.reset()" #form="ngForm">
+        <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" placeholder="Introduce tu nombre" required autofocus ngModel/>
+        <label for="email">Email</label>
+        <input type="email" name="email"  placeholder="Correo electrónico" required autofocus ngModel/>
+        <label for="asunto">Asunto </label>
+        <input type="text" name="asunto"  placeholder="Asunto de la consulta" required  ngModel/>
+        <textarea name="mensaje" placeholder="¿Cuál es el motivo de tu consulta?" cols="30" rows="6" required ngModel></textarea>
+        <button id="enviar" name="enviar" type="submit" class="btn">ENVIAR CONSULTA</button>
+    </form>
+</div>

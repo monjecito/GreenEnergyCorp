@@ -1,0 +1,28 @@
+<head>
+    <link rel="shortcut icon" href="../assets/img/logoo.png"/>
+</head>
+<header>
+    <img src="../assets/img/loguete5.png" class="logo">
+    <ul>
+        <li><a href="#" >Inicio</a></li>
+        <li><a [routerLink]="['/servicios']" [routerLinkActive]="['actived']">Servicios</a></li>
+        <li><a [routerLink]="['/que-hacemos']" [routerLinkActive]="['actived']">¿Que hacemos?</a></li>
+        <li><a [routerLink]="['/clientes']" [routerLinkActive]="['actived']">Clientes</a></li>
+        <li><a [routerLink]="['/contacto']" [routerLinkActive]="['actived']">Contacto</a></li>
+    </ul>
+</header>
+
+<section id="content">
+    <router-outlet></router-outlet>
+</section>
+
+<footer>
+    © GREEN ENERGY CORP 2020<br><br>
+    <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a [routerLink]="['/clientes']">Clientes</a></li>
+        <li><a [routerLink]="['/que-hacemos']" >¿Que hacemos?</a></li>
+        <li><a [routerLink]="['/contacto']">Contacto</a></li>
+    </ul>
+
+</footer>

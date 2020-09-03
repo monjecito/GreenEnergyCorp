@@ -1,0 +1,243 @@
+/*Importar fuentes*/
+@import url(https://fonts.googleapis.com/css?family=Roboto:400);
+@font-face {
+    font-family: "yanone";
+    src: url("fonts/yanone.ttf");
+}
+
+@font-face {
+    font-family: "finger";
+    src: url("fonts/finger.ttf");
+}
+
+/*GENERALES*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: "yanone", Arial, Helvetica;
+    font-size: 20px;
+    background-image: url("../img/WhatsApp_Image_2020-06-14_at_11.15.18-mitchell-edit.png");
+    background-repeat: inherit;
+}
+
+.clearfix {
+    float: none;
+    clear: both;
+}
+
+/*Barra de navegación*/
+
+header {
+    display: flex;
+    width: 100%;
+    height: 93px;
+    background: rgba(87, 132, 64, 0.6);
+    position: fixed;
+    text-transform: uppercase;
+
+}
+
+header ul {
+    display: block;
+    width: 60%;
+    height: inherit;
+    margin: 0px auto;
+    margin-top: -5px;
+}
+
+header ul li {
+    display: inline-block;
+    margin: 5px auto;
+    text-align: center;
+    line-height: 93px;
+}
+
+header ul li img {
+    padding-left: 50px;
+}
+
+header a {
+    display: block;
+    padding-right: 20px;
+    padding-left: 30px;
+    height: inherit;
+    text-decoration: none;
+    color: white;
+    transition: all 300ms;
+}
+
+header a:hover, .actived {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/*LOGO*/
+
+/*Contenedor principal*/
+#content {
+    min-height: 1000px;
+    height: auto;
+    width: 75%;
+    margin: 0px auto;
+    box-shadow: 0px 0px 40px black;
+    border-left: 1px solid #b7b7b7;
+    border-right: 1px solid #b7b7b7;
+    background: rgba(255, 255, 255, 0.7);
+    padding-top: 120px;
+    padding-bottom: auto;
+}
+
+/*Pie de pagina*/
+footer {
+    width: 75%;
+    margin: 0px auto;
+background-color: rgba(87, 132, 64, 0.6);
+    text-align: center;
+    align-self: flex-end;
+    color: white;
+}
+footer ul{
+    list-style: none;
+}
+footer ul li{
+    display: inline;
+    padding:10px;
+    color: rgba(0, 0, 0, 0.5);
+}
+footer ul li a{
+    color: rgba(0, 0, 0, 0.5);
+}
+footer ul li a:link,a:visited,a:hover{
+   text-decoration: none;
+    -webkit-animation-timing-function: ease;
+    -moz-animation-timing-function: ease;
+    -o-animation-timing-function: ease;
+    animation-timing-function: ease;
+    scroll-padding-top: 0;
+}
+
+/*Inicio*/
+#title {
+    width: 70%;
+    margin: 0px auto;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+#title h1 {
+    font-size: 60px;
+    border-bottom: 1px solid #CCC;
+    padding-bottom: 5px;
+    color: greenyellow;
+    font-weight: 700;
+    letter-spacing: .01em;
+    text-shadow: .022em .022em .022em
+}
+#title h1:hover{
+    color: cornflowerblue;
+}
+#title h2 {
+    font-size: 25px;
+    color: gray;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+article.about {
+    width: 70%;
+    margin: 0px auto;
+    margin-bottom: 20px;
+    font-size: 23px;
+}
+article.about h2,h1{
+    font-size:35px;
+}
+
+li .img {
+    width: 60px;
+    height: 50px;
+}
+
+.project {
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 20px;
+    margin-bottom: -200px;
+    padding: 35px;
+}
+
+/*CONTACTO*/
+.project .image {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+}
+
+
+.project a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo {
+    padding-left: 210px;
+    width: 80px;
+    height: 80px;
+}
+
+form{
+    padding: 60px;
+    max-width: 400px;
+    background-color: transparent;
+    margin: 0 auto;
+}
+
+form input, form textarea{
+    margin-bottom: 15px;
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: none;
+    color: #525c66;
+    font-size: 1em;
+    resize: horizontal;
+}
+
+form button {
+    display: block;
+    background-color: #0095eb;
+    padding: 10px 45px 10px 45px;
+    border: 0;
+    font-size: 1em;
+    color: 	white;
+    font-family: "Roboto", sans-serif;
+   border-radius: 1px;
+}
+form button:hover{
+    background-color: #046193;
+}
+
+body::-webkit-scrollbar {
+    width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(87, 132, 64, 0.6);
+    outline: 1px solid green;
+}
+@media screen and (max-width: 870px) {
+    header a{
+        display: none;
+    }
+}

@@ -1,0 +1,44 @@
+body, html {
+    height: 100%;
+}
+
+.parallax{
+    background-image:url("../../../assets/img/Tres-noticias-llenas-de-energía.jpg");
+    min-height: 500px;
+    min-width:auto;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.txt{
+    font-size: 50px;
+    color: wheat;
+    padding-top: 200px;
+    text-align: center;
+    animation-name: aumento;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-iteration-count:1;
+    animation-fill-mode: forwards;
+}
+@keyframes aumento {
+0%{
+    opacity: 0.2;
+}
+    100%{
+        color: #7e7509;
+        opacity: 0.9;
+    }
+}
+b{
+    font-size: 25px;
+}
+
+.txt:hover{
+    color: floralwhite;
+}
+footer{
+    margin: 0px;
+}

@@ -1,0 +1,10 @@
+form{
+    padding-top: 50px;
+}
+ul{
+    text-align: center;
+    padding-right: 150px;
+}
+textarea{
+    resize: none;
+}
